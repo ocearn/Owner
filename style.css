@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #e3e6eb, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top:50;
+}
+
+.cover-photo {
+    width: 100%;
+    height: 100%; /* হাইট একটু বাড়ানো হলো */
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 90px; /* কভার ফটো নিচে নামানো হলো */
+}
+.cover-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile {
+    margin-top: -80px; /* আগে-95px */
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background: white;
+    transition: transform 0.3s ease-in-out;
+}
+.profile-container {
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile h2 {
+    font-size: 18px;
+ /*   margin-top: -1px ;*/
+    margin-bottom: -10px;
+}
+
+.verified-badge {
+    color: #1DA1F2; /* ব্লু ভেরিফাইড কালার */
+    font-size: 18px;
+    margin-left: 3px;
+    vertical-align: middle;
+}
+
+.profile p {
+    font-size: 14px;
+    color: gray;
+}
+
+.courses h3 {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.courses h3 span {
+    float: right;
+    font-size: 14px;
+    color: #a3ddff;
+    cursor: pointer;
+}
+
+.course-box {
+    display: flex;
+    gap: 10px;
+}
+
+.course {
+    flex: 1;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    color: Black;
+}
+
+.marketing {
+    background: #E0F6D8;
+}
+
+.business {
+    background: #E6F4FB;
+}
+
+.course h4 {
+    margin: 5px 0;
+}
+
+.course p {
+    font-size: 12px;
+    margin: 2px 0;
+}
+
+.rating h3 {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    gap: -5px;
+}
+
+.stars img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid white;
+    background-color: white;
+    margin-left: -10px;
+}
+
+.stars span {
+    font-size: 14px;
+    color: #555;
+}
+
+.description {
+    text-align: left;
+}
+
+.description h3 {
+    margin-bottom: 10px;
+}
+
+.description p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #555;
+}
+
+.footer-bar {
+    position: fixed;
+    bottom: -60px;
+    width: 100%;
+    background: #1d1d1d;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 1px;
+    box-shadow: 0 -8px 10px rgba(0, 0, 0, 0.2);
+    transition: bottom 0.3s ease-in-out;
+}
+
+
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-btn {
+    background: #27AE60;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-btn i {
+    font-size: 18px;
+}
+
+.footer-btn:hover {
+    background: #1f8a4c;
+}
+
+
+
+
+/* বোতাম কন্টেইনার */
+.button-container {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* বোতামের সাধারণ স্টাইল */
+button {
+    position: relative;
+    padding: 10px 11px;
+    border: none;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #ff4d4d, #ff8080);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 6px; /* আইকন ও সংখ্যা একসাথে রাখতে */
+    min-width: 50px; /* বোতামের ন্যূনতম প্রস্থ ঠিক রাখা */
+    white-space: nowrap; /* লাইন ব্রেক বন্ধ করা */
+    padding: 10px 15px; /* ভারসাম্যপূর্ণ স্পেসিং */
+    margin-bottom: 10px;
+}
+
+
+/* প্রতিটি বোতামের আলাদা ব্যাকগ্রাউন্ড */
+#like-btn {
+    background: linear-gradient(135deg, #ff4d4d, #ff8080);
+}
+
+#follow-btn {
+    background: linear-gradient(135deg, #007bff, #66aaff);
+}
+
+#subscribe-btn {
+    background: linear-gradient(135deg, #ff0000, #ff6666);
+}
+
+#share-btn {
+    background: linear-gradient(135deg, #00c853, #66ff99);
+}
+
+/* হোভার করলে স্টাইল পরিবর্তন */
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ক্লিক করলে এনিমেশন */
+button:active {
+    transform: scale(0.95);
+}
+
+/* কাউন্ট সংখ্যা ঠিকভাবে রাখার জন্য */
+/*b {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}+/
