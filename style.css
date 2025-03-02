@@ -16,7 +16,7 @@ body {
     overflow: hidden;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    margin-top: 110px; /* কভার ফটো নিচে নামানো হলো */
+    margin-top: 150px; /* কভার ফটো নিচে নামানো হলো */
 }
 .cover-photo img {
     width: 100%;
